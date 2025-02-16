@@ -1,7 +1,7 @@
-name: 'Upload SSL cert for qiniu.com'
-description: 'upload qiniu ssl cert for CDN'
-author: 'fox.mn'
-inputs: 
+name: "Upload SSL cert for qiniu.com"
+description: "upload qiniu ssl cert for CDN"
+author: "fox.mn"
+inputs:
   ak:
     description: the access key
     required: true
@@ -10,7 +10,7 @@ inputs:
     required: true
   domain:
     description: the domain name
-    required: true 
+    required: true
   update-domains:
     description: update cdn https config
     required: true
@@ -26,7 +26,10 @@ inputs:
   key:
     description: the cert key content
     required: false
+  debug:
+    description: enable debug
+    required: false
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
